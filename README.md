@@ -34,23 +34,23 @@ walk, create a generator that uses some other algorithm to return X and Y coordi
 a random word and then follows with a word that follows a randomly picked instance of that word, continuously. Make some poetry and see what fun
 phrases are emitted. Share them!
 
-For example, let's say I have the text:
+ For example, let's say I have the text:
 
-"Python is cool and fun. I want to learn to program Python for fun times. I love ice cream and program for a living."
+ "Python is cool and fun. I want to learn to program Python for fun times. I love ice cream and program for a living."
 
-The generator will start with a given random word, for example "and". The next time called it will return with either "fun" or "program".
-If it then returns "fun", it will next return either "I" or "times", etc.
+ The generator will start with a given random word, for example "and". The next time called it will return with either "fun" or "program".
+ If it then returns "fun", it will next return either "I" or "times", etc.
 
-As a bonus, use a large number of works by the same author, and respect punctuation. The first word returned will always be the first word of
-a sentence, and when a chosen word ends a sentence, it will return that punctuation.
+ As a bonus, use a large number of works by the same author, and respect punctuation. The first word returned will always be the first word of
+ a sentence, and when a chosen word ends a sentence, it will return that punctuation.
 
 3. Write a generator that generates noise (randomly generated), and then tones. A tone is just a [Sine wave](https://en.wikipedia.org/wiki/Sine_wave) at a specific frequency.
 Output the sound to the speaker via [SimpleAudio](http://simpleaudio.readthedocs.io/en/latest/) using samples of specific duration, or
 [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/) using callbacks in real-time.
 
-Expand your program to generate [harmonics](https://en.wikipedia.org/wiki/Harmonic) at different amplitudes (sound is additive, so you can add
-the results of multiple generators). Finally expand your program to generate notes, perhaps by simply increasing or decreasing amplitude (using a generator again),
-or by developing a full [ADSR](https://en.wikipedia.org/wiki/Synthesizer#Attack_Decay_Sustain_Release_.28ADSR.29_envelope) amplitude generator.
+ Expand your program to generate [harmonics](https://en.wikipedia.org/wiki/Harmonic) at different amplitudes (sound is additive, so you can add
+ the results of multiple generators). Finally expand your program to generate notes, perhaps by simply increasing or decreasing amplitude (using a generator again),
+ or by developing a full [ADSR](https://en.wikipedia.org/wiki/Synthesizer#Attack_Decay_Sustain_Release_.28ADSR.29_envelope) amplitude generator.
 
-Record your creation and save to a wave file.
+ Record your creation and save to a wave file.
 
