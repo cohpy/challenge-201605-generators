@@ -14,11 +14,13 @@ Pick one to start, and then see if you can do more.
 
 ## Simpler ##
 
-1. Write a generator function that implements the [Python range function](https://docs.python.org/2/library/functions.html#range) (without using range()). 
+1. Write a generator function that implements the [Python range
+   function](https://docs.python.org/3/library/functions.html#func-range)
+   (without using range()).
 
 2. Write a generator function that generates prime numbers via the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
 
-3. Write a generator function that given a string, generates all [permutations](https://en.wikipedia.org/wiki/Permutation) of that string. 
+3. Write a generator function that given a string, generates all [permutations](https://en.wikipedia.org/wiki/Permutation) of that string.
 
 4. Write a generator function that generates all [Pythagorean Triples](https://en.wikipedia.org/wiki/Pythagorean_triple) starting with (3,4,5).
 
