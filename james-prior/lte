@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import sys
+
+def lte(integers, maximum):
+    for i in integers:
+        if i > maximum:
+            break
+        yield i
+
+def main(lines, maximum):
+    for i in lte(map(int, lines), maximum):
+        try:
+            print(i)
+        except BrokenPipeError:
+            break
+
+if __name__ == '__main__':
+    main(sys.stdin, int(sys.argv[1]))
+
+

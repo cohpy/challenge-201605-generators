@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+import sys
+
+def even(integers):
+    for i in integers:
+        if i % 2 == 0:
+            yield i
+
+def main(lines):
+    for i in even(map(int, lines)):
+        try:
+            print(i)
+        except BrokenPipeError:
+            break
+
+if __name__ == '__main__':
+    main(sys.stdin)
